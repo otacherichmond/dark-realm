@@ -151,6 +151,7 @@ box-shadow: 7px 0 32px 0 rgba(255, 255, 255, 0.25);
  }
  #activities {
     padding: 20px 0 0 10px;
+    height: 80vh;
  }
  #activities > h2 {
     font-size: 1.7rem;
