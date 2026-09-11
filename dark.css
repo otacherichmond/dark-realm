@@ -481,7 +481,8 @@ box-shadow: 7px 0 32px 0 rgba(255, 255, 255, 0.25);
     }
     /* main rules */
     #rules ul {
-        grid-template-columns: 1fr;
+    display: flex;
+    flex-direction:column;
     }
 }
 /* tablet version */
