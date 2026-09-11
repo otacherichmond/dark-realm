@@ -14,6 +14,7 @@ html {
     --color-1: #e5c407;
     --red: #cb0f0c;
     --white: #fff;
+    --color-3: #07111f;
 }
 body{
     background: var(--color);
@@ -146,7 +147,7 @@ box-shadow: 7px 0 32px 0 rgba(255, 255, 255, 0.25);
  }
  /* main content activities section*/
  main #activities {
-    background-color: #07111f;
+    background-color: var(--color-3);
     padding-bottom: 20px;
  }
  #activities {
@@ -227,12 +228,13 @@ box-shadow: 7px 0 32px 0 rgba(255, 255, 255, 0.25);
  /* leaderboard section */
  #leaderboard{
     background-color: var(--color);
-    padding: 30px 0;
+    padding: 30px 0 0;
  }
  #leaderboard > h2 {
     font-size: clamp(2.2rem, 3.5vw, 3.5rem);
     text-align: center;
     font-weight: bold;
+    padding-top: 20px;
     color: var(--red);
     font-family: Orbitron, sans-serif;
     border-top: 3px dashed var(--red);
@@ -242,7 +244,8 @@ box-shadow: 7px 0 32px 0 rgba(255, 255, 255, 0.25);
     text-align: center;
     font-weight: 600;
     color: var(--re, rgb(102, 76, 196));
-    font-size: clamp(1.1rem, 1.5vw, 1.7rem);margin-bottom: 20px;
+    font-size: clamp(1.1rem, 1.5vw, 1.7rem);
+    margin-bottom: 20px;
  }
  .table {
     display: flex;
@@ -265,6 +268,7 @@ box-shadow: 7px 0 32px 0 rgba(255, 255, 255, 0.25);
     text-decoration: none;
     font-family: Black Ops One, sans-serif;
     color: var(--white);
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
     border-bottom: 2px solid;
  }
  .table a:hover {
@@ -281,6 +285,7 @@ box-shadow: 7px 0 32px 0 rgba(255, 255, 255, 0.25);
  .thead p{
     padding-right: 10px;
     color: var(--white);
+    font-size: clamp(1.2rem, 1.5vw, 2rem);
     font-family: Black Ops One, sans-serif;
     border-right: 2px solid var(--color-1);
  }
@@ -293,10 +298,14 @@ box-shadow: 7px 0 32px 0 rgba(255, 255, 255, 0.25);
     justify-content: space-between;
     gap: 15px
  }
+ .tbody p{
+    font-size: clamp(1.2rem, 1.5vw, 2rem);
+ }
  .tbody > div img {
     width: 70px;
     height: 70px;
     border-radius: 0 10px 10px 0;
+    border: none;
  }
  .tbody {
     display: flex;
@@ -316,6 +325,56 @@ box-shadow: 7px 0 32px 0 rgba(255, 255, 255, 0.25);
     gap: 10px;
     justify-content: space-between;
  }
+ /* main rules section */
+ #rules {
+    background-color: var(--color-3);
+       color: var(--white);
+       padding-top: 20px;
+       padding-bottom: 20px;
+ }
+ #rules > h2 {
+    margin: 0 10px 20px;
+    font-family: Black Ops One, sans-serif;
+    font-size: clamp(1.5rem, 3vw, 3rem);
+ }
+ #rules > h2::before{
+    content: "🔥";
+ }
+ #rules > h2::after {
+    content: "🔥";
+ }
+ #rules ul {
+    width: 80vw;
+    max-width: 700px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+ }
+ #rules ul li {
+    list-style-type: square;
+    font-weight: 100;
+     color: var(--color-1);
+    font-family: Orbitron, sans-serif;
+ }
+ #rules h3 {
+    margin: 5vh 0 10px 5vw;
+    font-family: Black Ops One, sans-serif;
+ }
+ #rules h4 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 30px;
+ }
+ #rules p {
+    text-align: center;
+ }
+#rules h4:first-of-type::before {
+ content: "⚠️";
+}
+#rules h4:nth-of-type(2)::before{
+    content: "❌";
+}
  /* mobile version */
  @media screen and (max-width: 450px){
      /* menu effects*/
@@ -412,6 +471,9 @@ box-shadow: 7px 0 32px 0 rgba(255, 255, 255, 0.25);
     #activities > h2 {
         text-align: center;
         border: none;
+    }
+    .activity p{
+        font-size: 1.2rem;
     }
     /*main leaderboard */
     .table a {
