@@ -19,13 +19,13 @@ html {
 body{
     background: var(--color);
     height: 100dvh;
-    max-height: auto;
 }
 /* hero section */
 header{
     position: relative;
     overflow: hidden;
     height: 100dvh;
+    max-height: auto;
 }
 header > div:first-of-type{
 width: 100%;
