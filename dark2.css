@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Black+Ops+One&family=Orbitron:wght@400..900&display=swap');
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+:root{
+    --color: #000;
+    --font-size-p: 0.75rem;
+    --color-1: #e5c407;
+    --red: #cb0f0c;
+    --white: #fff;
+    --color-3: #07111f;
+}
+body {
+   background-color: var(--color);
+}
+header nav {
+   width: 100%;
+ display: flex;
+ padding: 10px 5px;
+ align-items: center;
+ flex-direction: row;
+ justify-content: flex-end;
+position: fixed;
+top: 0;
+background: rgba(255, 255, 255, 0.12);
+border: 2px solid rgba(255, 255, 255, 0.25);
+backdrop-filter: blur(17px);
+box-shadow: 7px 0 32px 0 rgba(255, 255, 255, 0.25);
+z-index: 1000;
+}
+nav a {
+ text-decoration: none;
+        display: block;
+        font-size: var(--font-size-p);
+        font-family: Orbitron, sans-serif;
+        border-radius: 10px;
+        border: none;
+        padding: 7px 10px;
+        color: var(--white);
+        background: var(--color);
+        box-shadow: 0 0 12px 5px #333;
+}
+#leaderboard{
+    background-color: var(--color);
+    padding: 30px 0 0;
+ }
+ #leaderboard > h2 {
+    font-size: clamp(2.2rem, 3.5vw, 3.5rem);
+    text-align: center;
+    font-weight: bold;
+    padding-top: 20px;
+    color: var(--red);
+    font-family: Orbitron, sans-serif;
+    border-top: 3px dashed var(--red);
+ }
+ #leaderboard > p {
+    font-family: Audiowide, sans-serif;
+    text-align: center;
+    font-weight: 600;
+    color: var(--re, rgb(102, 76, 196));
+    font-size: clamp(1.1rem, 1.5vw, 1.7rem);
+    margin-bottom: 20px;
+ }
+ .table {
+    display: flex;
+    flex-direction: column;
+ }
+ .table > div{
+    width: 90vw;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+ }
+ .table > div:first-of-type {
+    padding: 0;
+    margin: 0 auto 20px;
+ }
+ .table a {
+    align-self: flex-end;
+    margin: 10px 40px 10px 10px;
+    text-decoration: none;
+    font-family: Black Ops One, sans-serif;
+    color: var(--white);
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
+    border-bottom: 2px solid;
+ }
+ .table a:hover {
+    background: linear-gradient(135deg, var(--red), var(--color-1));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    border-radius: 10px;
+    text-decoration: underline;
+    padding: 10px 5px;
+    border-bottom: none;
+    box-shadow: 0 0 6px 1px var(--white);
+ }
+ .thead p{
+    padding-right: 10px;
+    color: var(--white);
+    font-size: clamp(1.2rem, 1.5vw, 2rem);
+    font-family: Black Ops One, sans-serif;
+    border-right: 2px solid var(--color-1);
+ }
+ .thead div p:last-of-type{
+    border: none;
+ }
+ .thead > div {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px
+ }
+ .tbody p{
+    font-size: clamp(1.2rem, 1.5vw, 2rem);
+ }
+ .tbody > div img {
+    width: 70px;
+    height: 70px;
+    border-radius: 0 10px 10px 0;
+    border: none;
+ }
+ .tbody {
+    display: flex;
+    align-items: center;
+    font-family: Audiowide, sans-serif;
+    color: var(--color-1);
+    background: #07111f;
+    margin: 10px auto;
+    padding: 0 10px;
+    border-radius: 20px;
+ }
+ .tbody div {
+    height: 100%;
+    align-items: center;
+    width: 50%;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+ }
+ /* Footer Styles */
+ footer {
+    background-color: #333;
+    color: var(--red);
+    padding: 20px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 10px;
+}
+footer > div {
+    display: flex;
+   flex-direction: column;
+    gap: 10px;
+   }
+footer > div p {
+    font-family: Orbitron, sans-serif;
+    font-size: clamp(0.8rem, 1.2vw, 1.7rem);
+}
+footer > p {
+   color: var(--white);
+   font-size: clamp(0.8rem, 1vw, 1.2rem);
+   text-align: center;
+}

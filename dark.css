@@ -24,8 +24,7 @@ body{
 header{
     position: relative;
     overflow: hidden;
-    height: 100dvh;
-    max-height: auto;
+    height: 100vh;
 }
 header > div:first-of-type{
 width: 100%;
@@ -110,7 +109,7 @@ header .content h1{
 header .content p:first-of-type{
 font-family: Audiowide, sans-serif;
 color: var(--color-1);
-font-size: 10px;
+font-size: 1.2rem;
 }
 header .content p, h1, img{
     margin-left: 5%;
@@ -123,13 +122,14 @@ header .content img{
 header .content p:last-of-type{
     font-family: Orbitron, sans-serif;
     color: var(--white);
+    font-size: clamp(0.8rem, 1.2vw, 1.5rem);
  }
  header .content a {
     display: inline-block;
         height: auto;
         padding: 10px 20px;
         text-align: center;
-        font-size: 10px;
+        font-size: clamp(0.9rem, 1.7vw, 2rem);
         color: var(--white);
         border-radius: 10px;
         background: #4b068c;
@@ -375,6 +375,30 @@ box-shadow: 7px 0 32px 0 rgba(255, 255, 255, 0.25);
 }
 #rules h4:nth-of-type(2)::before{
     content: "❌";
+}
+/* footer section */
+footer {
+    background-color: #333;
+    color: var(--red);
+    padding: 20px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 10px;
+}
+footer > div {
+    display: flex;
+   flex-direction: column;
+    gap: 10px;
+   }
+footer > div p {
+    font-family: Orbitron, sans-serif;
+    font-size: clamp(0.8rem, 1.2vw, 1.7rem);
+}
+footer > p {
+   color: var(--white);
+   font-size: clamp(0.8rem, 1vw, 1.2rem);
+   text-align: center;
 }
  /* mobile version */
  @media screen and (max-width: 450px){
